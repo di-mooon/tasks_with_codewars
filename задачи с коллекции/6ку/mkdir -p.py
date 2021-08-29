@@ -2,5 +2,5 @@ import os
 
 
 def mkdirp(*directories):
-    if not os.path.isdir('/'.join(directories).replace('//', '/')):
-        os.makedirs('/'.join(directories).replace('//', '/'))
+    if not os.path.isdir(os.path.join(*directories)):
+        os.makedirs(os.path.join(*directories))

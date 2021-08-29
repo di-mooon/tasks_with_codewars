@@ -3,4 +3,5 @@ def multiplyAll(lst):
         return [x*n for x in lst]
     return m_a
 
+
 print(multiplyAll([1,2,3])(3))
